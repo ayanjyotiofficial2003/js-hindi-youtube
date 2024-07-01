@@ -70,5 +70,64 @@ let someNumber = 33
 
 let stringNumber = String(someNumber)
 
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+// ******************************************Operations********************************************
+
+let value = 3 
+let negValue = -value
+
+// console.log(negValue); // output => -3
+
+// console.log(2+2); // output => 4
+// console.log(2-2); // output => 0
+// console.log(2*2); // output => 4
+// console.log(2**2); // output => 4 (power operation 2**2 => 2^2)
+// console.log(2**3); // output => 8 (power operation 2**3 => 2^3)
+// console.log(2/3); // output => 0.666
+// console.log(2%3); // output => 2 (Remainder operation, it gives remainder)
+
+
+let str1 = "hello"
+
+let str2 = "ayanjyoti"
+
+let str3 = str1 + " " + str2
+
+// console.log(str3);
+
+
+// console.log(1 + 2); // output => 3
+// console.log("1" + 2); // output => 12
+// console.log(1 + "2"); // output => 12
+// console.log(1 + 2 + 2); // output => 5
+// console.log("1" + 2 + 2); // output => 122
+// console.log("1" + (2 + 2)); // output => 14
+// console.log(1 + 2 + "2"); // output => 32
+// console.log(1 + "2" + "2"); // output => 122
+// console.log(2 + 1 + "2" + "2"); // output => 322
+// console.log("2" + "1" + 2 + 2); // output => 2122
+// console.log("2" + "1" + (2 + 2)); // output => 214
+
+// console.log((5 + 3) - 8 / 9 % 25);
+
+// console.log(true); //output => true
+
+// we should try to avoid this type of code, because it is very confusing
+// console.log(+true); //output => 1
+// console.log(+""); //output => 0
+
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2
+
+let gameCounter = 100
+// gameCounter++ // output => 101
+// ++gameCounter // output => 101
+// console.log(gameCounter);
+// let count = ++gameCounter // output => 101
+let count = gameCounter++ // output => 100
+console.log(count);
+
+
+
