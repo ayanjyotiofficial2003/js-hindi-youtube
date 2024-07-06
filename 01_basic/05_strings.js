@@ -27,14 +27,22 @@ const anotherString = gameName.slice(-12,8) // output => jyot
 // console.log(anotherString); 
 
 const anotherStringOne = "       ayanjyoti    "
-console.log(anotherStringOne); // output =>        ayanjyoti              (with Extra Blank Space)   
-console.log(anotherStringOne.trim()); // output => ayanjyoti (No Blank Space)
+// console.log(anotherStringOne); // output =>        ayanjyoti              (with Extra Blank Space)   
+// console.log(anotherStringOne.trim()); // output => ayanjyoti (No Blank Space)
 
 
 const url = "https://ayanjyoti.com/ayanjyoti%20mondal"
-console.log(url.replace("%20", "-"));  // output => https://ayanjyoti.com/ayanjyoti-mondal
+// console.log(url.replace("%20", "-"));  // output => https://ayanjyoti.com/ayanjyoti-mondal
 
-console.log(url.includes('ayanjyoti')) // output => true (because ayanjyoti is present in the url)
-console.log(url.includes('sundar')) // output => false (because sundar is not present in the url)
+// console.log(url.includes('ayanjyoti')) // output => true (because ayanjyoti is present in the url)
+// console.log(url.includes('sundar')) // output => false (because sundar is not present in the url)
 
-console.log(gameName.split("-")); // output => [ 'ayanjyoti', 'mondal', 'coder' ]
+// console.log(gameName.split("-")); // output => [ 'ayanjyoti', 'mondal', 'coder' ]
+
+// returns unicode value of given index
+// console.log(gameName.charCodeAt(15)); // output => 108
+// console.log(gameName.charCodeAt(18)); // output => 111
+
+
+const string3 = gameName.concat(name); 
+console.log(string3); // output => ayanjyoti-mondal-coderayanjyoti
