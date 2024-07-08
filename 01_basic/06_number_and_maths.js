@@ -45,7 +45,7 @@ const hundreds = 1000000
 // console.log(Math.random()); // output => 0.17716932916982553
 // console.log(Math.random()); // output => 0.19311839030150124
 /* 
-NOTE :- Math.random() IS A METHOD AND IT PROVIDE VALUES IN BETWEEN 0 & 1, 
+NOTE :- Math.random() IS A METHOD AND IT PROVIDE RANDOM VALUES IN BETWEEN 0 & 1, 
  AND EVERY TIME IT VALUE CHANGES.
 */
 
