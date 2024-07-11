@@ -44,5 +44,67 @@ const obj4 = {5:"a", 6:"b"}
 // const obj3 = Object.assign({}, obj1, obj2, obj4) // output => { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
 
 const obj3 = {...obj1, ...obj2, ...obj4} // output => { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
-console.log(obj3);
+// console.log(obj3);
 
+
+const user = [
+    {
+        id: 1,
+        email: "ayan@gmail.com"
+    },
+    {
+        id: 1,
+        email: "ayan2@gmail.com"
+    },
+    {
+        id: 1,
+        email: "ayan21@gmail.com"
+    },
+]
+
+// console.log(user[2].email); // output => ayan21@gmail.com
+
+// console.log(tinderUser);
+
+// console.log(Object.keys(tinderUser)); // output => [ 'id', 'name', 'isLoggedIn' ]
+
+// console.log(Object.values(tinderUser)); // output => [ '123abc', 'sammy', false ]
+
+// console.log(Object.entries(tinderUser)); // output => [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedIn', false ] ]
+
+// console.log(tinderUser.hasOwnProperty("isLoggedIn")); // output => true (because "isLoggedIn" key is present in tinderUser object )
+
+// console.log(tinderUser.hasOwnProperty("isLogged")); // output => false (because "isLogged" key is not present in tinderUser object )
+
+
+
+const course = {
+    courseName: "js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh",
+    courseStudent: "Ayanjyoti"
+}
+
+// console.log(course.courseName); // output => js in hindi
+
+// const {courseStudent} = course
+// console.log(courseStudent); // output => Ayanjyoti
+
+// This is called object destructure.
+// const {courseStudent: student} = course
+// console.log(student); // output => Ayanjyoti
+
+
+// This is Json format (Means in this format we will get API)
+// {
+//     "name": "Ayanjyoti Mondal",
+//     "courseName": "js in hindi",
+//     "price": "999"
+// }
+
+// other format of getting API
+// [
+//     {},
+//     {},
+//     {}
+// ]
