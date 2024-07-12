@@ -61,6 +61,15 @@ const result = addTwoNumbers(3, 5)
 
 
 // function logginUserMessage(username){
+//     return (`${username} just logged in`)
+// }
+
+// console.log(logginUserMessage("Ayanjyoti")); // output => Ayanjyoti just logged in
+// console.log(logginUserMessage("")); // output => just logged in
+// console.log(logginUserMessage()); // output => undefined just logged in
+
+
+// function logginUserMessage(username){
 //     if(username === undefined){
 //         console.log("Please enter a username");
 //         return
@@ -71,14 +80,14 @@ const result = addTwoNumbers(3, 5)
 
 // console.log(logginUserMessage("Ayanjyoti")); // output => Ayanjyoti just logged in
 // console.log(logginUserMessage("")); // output => just logged in
-// console.log(logginUserMessage()); // output => undefined just logged in
+// console.log(logginUserMessage()); // output => Please enter a username
 
 
 
 
-function logginUserMessage(username = "sam"){
-    return (`${username} just logged in`)
-}
+// function logginUserMessage(username = "sam"){
+//     return (`${username} just logged in`)
+// }
 
 // console.log(logginUserMessage("Ayanjyoti")); // output => Ayanjyoti just logged in
 // console.log(logginUserMessage("")); // output => just logged in
