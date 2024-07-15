@@ -74,3 +74,17 @@ const isUserLoggedIn = true
 // else{
 //     console.log("Balance is less than 1500");
 // }
+
+
+const userLoggedIn = true
+const debitCard = true
+const userLoggedInFromGoogle = false
+const userLoggedInFromEmail = true
+
+if (userLoggedIn && debitCard && 2==2 && 5 != 6) {
+    console.log("You are allowed for shopping");
+}
+
+if (userLoggedInFromGoogle || userLoggedInFromEmail || 2 == 2) {
+    console.log("User Logged In");
+}
