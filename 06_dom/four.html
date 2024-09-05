@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScripts</li>
+    </ul>
+</body>
+<script>
+
+    // const listItem = document.createElement('li');
+    // listItem.innerHTML = "python" ;
+    // document.querySelector('.language').appendChild(listItem);
+
+    function addLanguage(langName){
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(listItem);
+    }
+
+    addLanguage("python");
+    addLanguage("Typescripts");
+
+
+    // THIS IS THE OPTIMISED APPROACH
+    function addOptiLanguage(langName){
+        const listItem = document.createElement('li');
+        const addText = document.createTextNode(langName);
+        listItem.appendChild(addText);
+        // const ans = document.querySelector('.language');
+        // ans.appendChild(listItem);
+
+        document.querySelector('.language').appendChild(listItem);
+    }
+
+    addOptiLanguage('Java');
+    addOptiLanguage('cSharp');
+    addOptiLanguage('golang');
+
+    // Edit Language
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    // secondLang.innerHTML = "Mojo" // This works, but this is not the optimised code
+    const newLi = document.createElement('li');
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi);
+
+
+    // Edit Language another example
+
+    const firstLanguage = document.querySelector('li:first-child')
+    firstLanguage.outerHTML = "<li> TypeScripts </li>"
+
+
+    // remove Language
+
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
+
+  
+</script>
+</html>
