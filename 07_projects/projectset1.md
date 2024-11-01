@@ -193,3 +193,5 @@ function newGame() {
     playGame = true;
   });
 }
+
+```
