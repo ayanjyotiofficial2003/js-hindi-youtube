@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    unsent	UNSENT (numeric value 0)	The object has been constructed.
+    
+    opened	OPENED (numeric value 1)	The open() method has been successfully invoked. During this state request headers can be set using setRequestHeader() and the fetch can be initiated using the send() method.
+    
+    headers received	HEADERS_RECEIVED (numeric value 2)	All redirects (if any) have been followed and all headers of a response have been received.
+    
+    loading	LOADING (numeric value 3)	The response body is being received.
+    
+    done	DONE (numeric value 4)	The data transfer has been completed or something went wrong during the transfer (e.g., infinite redirects).
+
+    <div id="output"></div>
+
+
+</body>
+
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
+    const xhr = new XMLHttpRequest();
+    // console.log(xhr.readyState);
+    // xhr.open('GET', 'https://api.github.com/users/hiteshchoudhary');
+    xhr.open('GET', requestUrl);
+
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+
+        if (xhr.readyState === 4) {
+            console.log(this.responseText)
+            const data = JSON.parse(this.responseText)
+            const outputdiv = document.getElementById('output')
+            outputdiv.innerHTML = ` 
+            <img src = ${data.avatar_url} style = "width: 500px; border-radius: 50%" />
+            <h2> Name : ${data.name} </h2>
+            <p> Followers : ${data.followers} </p>
+            <p> Public Repository : ${data.public_repos} </p>`
+        }
+    }
+    // xhr.onreadystatechange = function(){
+    //     console.log(xhr.readyState);
+
+    //     if (xhr.readyState === 4) {
+    //         const data = JSON.parse(this.responseText);
+    //         // console.log(this.responseText);
+    //         console.log(data);
+    //         console.log(typeof data);
+            
+    //         console.log(data.followers);
+            
+
+    //     }
+    // }
+
+    // console.log(xhr.readyState);
+    xhr.send();
+</script>
+
+</html>
